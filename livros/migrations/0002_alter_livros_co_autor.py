@@ -10,6 +10,10 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
+        migrations.AlterModelOptions(
+            name='livros',
+            options={'verbose_name': 'Livro'},
+        ),
         migrations.AlterField(
             model_name='livros',
             name='co_autor',
